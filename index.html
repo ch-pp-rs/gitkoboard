@@ -6,6 +6,17 @@
 		<script src="js/controller.js"></script>
 		
 		<!-- Styles -->
-		<link rel="stylesheet" href="todo.css">
+		<link rel="stylesheet" href="css/gitkoboard.css">
 	</head>
 	<body>
+        <div ng-controller="FeedCtrl">
+            <table>
+                <tr ng-repeat="repo in data | filter:repo.watchers_count">
+                    <td><img src="{{ repo.owner.avatar_url }}" /></td>
+                    <td>{{ repo.stargazers_count }}</td>
+                    <td>{{ repo.watchers_count }}</td>
+                </tr>
+            </table>
+        </div>
+	</body>
+</html>
