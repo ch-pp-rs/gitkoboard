@@ -27,4 +27,12 @@ angular.module('gitkoboardApp')
             $scope.readme = data;
         });
 
+    }).directive('gbReadme', function () {
+        return {
+            restrict: 'E',
+            scope: {
+                customerInfo: '=info'
+            },
+            templateUrl: '/scripts/controllers/templates/readme.html'
+        };
     });
