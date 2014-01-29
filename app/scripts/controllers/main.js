@@ -10,33 +10,21 @@ angular.module('gitkoboardApp')
         $scope.repos = new Array();
 
         url = gitUrl + 'users/' + user + '/repos';
-        $http({method: 'GET', url: url}).
-            success(function (data, status, headers, config) {
-                $scope.repos = data;
-            }).
-            error(function (data, status, headers, config) {
-                // called asynchronously if an error occurs
-                // or server returns response with an error status.
-            });
+
+        $http({method: 'GET', url: url}).success(function (data) {
+            $scope.repos = data;
+        });
 
         url = gitUrl + 'repos/' + user + '/' + repo + '/languages';
-        $http({method: 'GET', url: url}).
-            success(function (data, status, headers, config) {
-                $scope.jqueryRepo = data;
-            }).
-            error(function (data, status, headers, config) {
-                // called asynchronously if an error occurs
-                // or server returns response with an error status.
-            });
+
+        $http({method: 'GET', url: url}).success(function (data) {
+            $scope.jqueryRepo = data;
+        });
 
         url = gitUrl + 'repos/' + user + '/' + repo + '/readme';
-        $http({method: 'GET', url: url}).
-            success(function (data, status, headers, config) {
-                $scope.readme = data;
-            }).
-            error(function (data, status, headers, config) {
-                // called asynchronously if an error occurs
-                // or server returns response with an error status.
-            });
+
+        $http({method: 'GET', url: url}).success(function (data) {
+            $scope.readme = data;
+        });
 
     });
