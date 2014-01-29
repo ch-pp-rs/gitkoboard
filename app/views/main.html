@@ -1,19 +1,7 @@
 <div>
     <gb-readme></gb-readme>
-    <table>
-        <tr>
-            <td></td>
-            <td>Watchers</td>
-        </tr>
-        <tr ng-repeat="repo in repos | orderBy:'-watchers_count'">
-            <td>{{ repo.language }}</td>
-            <td>{{ repo.name }}</td>
-            <td>{{ repo.updated_at | date:'medium'}}</td>
-            <td>{{ repo.forks_count }}</td>
-            <td>{{ repo.watchers_count }}</td>
-            <td>{{ repo.stargazers_count }}</td>
-        </tr>
-    </table>
+    <gb-repo-overview user="p-m-p"></gb-repo-overview>
+
     <ul>
         <li ng-repeat="details in jqueryRepo">{{ details }}</li>
     </ul>

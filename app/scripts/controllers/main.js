@@ -1,36 +1,67 @@
 'use strict';
 
 angular.module('gitkoboardApp')
-    .controller('MainCtrl', function ($scope, $http) {
-        var userUrl, repoUrl, readmeUrl,
-            gitUrl = 'https://api.github.com/',
-            user = 'p-m-p',
-            repo = 'jquery-box-slider';
+    .controller('MainCtrl',function ($scope, $http) {
+    var userUrl, repoUrl, readmeUrl,
+        gitUrl = 'https://api.github.com/',
+        user = 'p-m-p',
+        repo = 'jquery-box-slider';
 
-        $scope.repos = new Array();
+    repoUrl = gitUrl + 'repos/' + user + '/' + repo + '/languages';
+    readmeUrl = gitUrl + 'repos/' + user + '/' + repo + '/readme';
 
-        userUrl = gitUrl + 'users/' + user + '/repos';
-        repoUrl = gitUrl + 'repos/' + user + '/' + repo + '/languages';
-        readmeUrl = gitUrl + 'repos/' + user + '/' + repo + '/readme';
+    $http({method: 'GET', url: repoUrl}).success(function (data) {
+        $scope.jqueryRepo = data;
+      }
+    );
 
-        $http({method: 'GET', url: userUrl}).success(function (data) {
-            $scope.repos = data;
-        });
-
-        $http({method: 'GET', url: repoUrl}).success(function (data) {
-            $scope.jqueryRepo = data;
-        });
-
-        $http({method: 'GET', url: readmeUrl}).success(function (data) {
-            $scope.readme = data;
-        });
-
-    }).directive('gbReadme', function () {
-        return {
-            restrict: 'E',
-            scope: {
-                customerInfo: '=info'
-            },
-            templateUrl: '/scripts/controllers/templates/readme.html'
+    $http({method: 'GET', url: readmeUrl}).success(function (data) {
+        $scope.readme = data;
+      }
+    );
+  })
+  .directive('gbReadme', function () {
+    return {
+        restrict: 'E',
+        scope: {
+            customerInfo: '=info'
+          },
+          templateUrl: '/scripts/controllers/templates/readme.html'
         };
-    });
+  })
+  .directive('gbRepoOverview', function (testService) {
+    return {
+        restrict: 'E',
+        templateUrl: '/scripts/controllers/templates/repo-overview.html',
+        link: function(scope, element, attrs) {
+            var userUrl,
+                gitUrl = 'https://api.github.com/';
+
+            userUrl = gitUrl + 'users/' + attrs.user + '/repos';
+
+            scope.repos = testService.getJSON(userUrl).then(function (data) {
+                scope.repos = data;
+            });
+        }
+      };
+  })
+  .service('testService', function ($rootScope, $http, $q) {
+    this.getJSON = function (url) {
+
+        // Setup a defered
+        var deferred = $q.defer();
+
+        $http.get(url).
+            success(function (data) {
+                // Resolve the promise with the data
+                deferred.resolve(data);
+            }).
+            error(function (data, status, headers, config) {
+                // Something bad happened
+                deferred.reject(status + " | bad");
+            });
+
+        // Return a promise that they will eventually get something back
+        return deferred.promise;
+    };
+});
