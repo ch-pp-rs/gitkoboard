@@ -1,10 +1,9 @@
 <table>
     <tr>
-        <td></td>
+        <td>{{ user }}</td>
         <td>Watchers</td>
     </tr>
-    <tr ng-repeat="repo in repos | orderBy:'-watchers_count'">
-        <td>{{ repo.language }}</td>
+    <tr ng-repeat="repo in repos | orderBy:'-watchers_count' | limitTo: 5">
         <td>{{ repo.name }}</td>
         <td>{{ repo.updated_at | date:'medium'}}</td>
         <td>{{ repo.forks_count }}</td>

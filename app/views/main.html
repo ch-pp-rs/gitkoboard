@@ -1,9 +1,23 @@
 <div>
-    <gb-readme></gb-readme>
-    <gb-repo-overview user="p-m-p"></gb-repo-overview>
+    <ul>
+        <li ng-repeat="user in users">{{ user }}</li>
+    </ul>
+    <form ng-submit="addUser()">
+        <input type="text" ng-model="user" size="30"
+               placeholder="add new user">
+        <input class="btn-primary" type="submit" value="add">
+    </form>
+</div>
+<div>
+    <ul class="repos">
+        <li ng-repeat="user in users">
+            <gb-repo-overview user="{{ user }}"></gb-repo-overview>
+        </li>
+    </ul>
 
     <ul>
         <li ng-repeat="details in jqueryRepo">{{ details }}</li>
     </ul>
     <p>{{ readme.content }}</p>
+    <gb-readme></gb-readme>
 </div>

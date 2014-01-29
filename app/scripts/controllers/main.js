@@ -2,7 +2,7 @@
 
 angular.module('gitkoboardApp')
     .controller('MainCtrl',function ($scope, $http) {
-    var userUrl, repoUrl, readmeUrl,
+    var repoUrl, readmeUrl,
         gitUrl = 'https://api.github.com/',
         user = 'p-m-p',
         repo = 'jquery-box-slider';
@@ -19,6 +19,12 @@ angular.module('gitkoboardApp')
         $scope.readme = data;
       }
     );
+
+    $scope.users = ['chapperz', 'p-m-p'];
+
+    $scope.addUser = function() {
+        $scope.users.push($scope.user);
+    };
   })
   .directive('gbReadme', function () {
     return {
@@ -37,7 +43,7 @@ angular.module('gitkoboardApp')
             var userUrl,
                 gitUrl = 'https://api.github.com/';
 
-            userUrl = gitUrl + 'users/' + attrs.user + '/repos';
+            userUrl = gitUrl + 'users/' + scope.user + '/repos';
 
             scope.repos = testService.getJSON(userUrl).then(function (data) {
                 scope.repos = data;
