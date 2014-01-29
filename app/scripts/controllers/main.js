@@ -17,11 +17,9 @@ angular.module('gitkoboardApp')
             $scope.repos = data;
         });
 
-
         $http({method: 'GET', url: repoUrl}).success(function (data) {
             $scope.jqueryRepo = data;
         });
-
 
         $http({method: 'GET', url: readmeUrl}).success(function (data) {
             $scope.readme = data;
