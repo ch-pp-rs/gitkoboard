@@ -1,6 +1,6 @@
 <h3><a href="https://github.com/{{ user }}/" target="_blank">{{ user }}</a></h3>
 <ul>
-    <li ng-repeat="repo in repos | orderBy:'-watchers_count' | limitTo: 5">
+    <li ng-repeat="repo in repos | orderBy:'-watchers_count' | limitTo: 25">
         <div class="repo-info">
             <a href="#/repo/{{ user }}/{{ repo.name }}">{{ repo.name }}</a><br />
             <span class="last-updated">Last updated: {{ repo.updated_at | date:'medium'}}</span>
