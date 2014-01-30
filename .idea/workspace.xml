@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bc28cc89-5c48-4780-af0b-3d5e8e502521" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/styles/main.scss" afterPath="$PROJECT_DIR$/app/styles/main.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/scripts/controllers/templates/repo-overview.html" afterPath="$PROJECT_DIR$/app/scripts/controllers/templates/repo-overview.html" />
     </list>
     <ignored path="gitkoboard.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -25,10 +25,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="main.scss" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="main.scss" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/styles/main.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="22" column="1" selection-start="365" selection-end="365" vertical-scroll-proportion="-0.67146283" vertical-offset="934" max-vertical-offset="1768">
+            <state line="65" column="29" selection-start="1026" selection-end="1026" vertical-scroll-proportion="-6.576923" vertical-offset="934" max-vertical-offset="1768">
               <folding />
             </state>
           </provider>
@@ -99,10 +99,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="repo-overview.html" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="repo-overview.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/scripts/controllers/templates/repo-overview.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="12" column="5" selection-start="588" selection-end="588" vertical-scroll-proportion="-7.8461537" vertical-offset="0" max-vertical-offset="306">
+            <state line="2" column="74" selection-start="160" selection-end="160" vertical-scroll-proportion="0.040767387" vertical-offset="0" max-vertical-offset="834">
               <folding />
             </state>
           </provider>
@@ -142,8 +142,8 @@
         <option value="$PROJECT_DIR$/Gruntfile.js" />
         <option value="$PROJECT_DIR$/app/views/main.html" />
         <option value="$PROJECT_DIR$/app/index.html" />
-        <option value="$PROJECT_DIR$/app/scripts/controllers/templates/repo-overview.html" />
         <option value="$PROJECT_DIR$/app/styles/main.scss" />
+        <option value="$PROJECT_DIR$/app/scripts/controllers/templates/repo-overview.html" />
       </list>
     </option>
   </component>
@@ -628,16 +628,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/scripts/controllers/templates/repo-overview.html">
+    <entry file="file://$PROJECT_DIR$/app/styles/main.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="5" selection-start="588" selection-end="588" vertical-scroll-proportion="-7.8461537" vertical-offset="0" max-vertical-offset="306">
+        <state line="65" column="29" selection-start="1026" selection-end="1026" vertical-scroll-proportion="-6.576923" vertical-offset="934" max-vertical-offset="1768">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/styles/main.scss">
+    <entry file="file://$PROJECT_DIR$/app/scripts/controllers/templates/repo-overview.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="1" selection-start="365" selection-end="365" vertical-scroll-proportion="-0.67146283" vertical-offset="934" max-vertical-offset="1768">
+        <state line="2" column="74" selection-start="160" selection-end="160" vertical-scroll-proportion="0.040767387" vertical-offset="0" max-vertical-offset="834">
           <folding />
         </state>
       </provider>
