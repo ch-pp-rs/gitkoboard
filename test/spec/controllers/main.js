@@ -20,7 +20,6 @@ describe('Controller: MainCtrl', function () {
             user = 'p-m-p',
             repo = 'jquery-box-slider';
 
-        httpMock.expectGET(gitUrl + 'users/' + user + '/repos').respond('1');
         httpMock.expectGET(gitUrl + 'repos/' + user + '/' + repo + '/languages').respond('2');
         httpMock.expectGET(gitUrl + 'repos/' + user + '/' + repo + '/readme').respond('3');
 
@@ -29,7 +28,6 @@ describe('Controller: MainCtrl', function () {
         });
 
         httpMock.flush();
-        expect(scope.repos).toBe('1');
         expect(scope.jqueryRepo).toBe('2');
         expect(scope.readme).toBe('3');
     });

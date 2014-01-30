@@ -1,13 +1,13 @@
-<table>
-    <tr>
-        <td>{{ user }}</td>
-        <td>Watchers</td>
-    </tr>
-    <tr ng-repeat="repo in repos | orderBy:'-watchers_count' | limitTo: 5">
-        <td>{{ repo.name }}</td>
-        <td>{{ repo.updated_at | date:'medium'}}</td>
-        <td>{{ repo.forks_count }}</td>
-        <td>{{ repo.watchers_count }}</td>
-        <td>{{ repo.stargazers_count }}</td>
-    </tr>
-</table>
+<h3>{{ user }}</h3>
+<ul>
+    <li ng-repeat="repo in repos | orderBy:'-watchers_count' | limitTo: 5">
+        <div class="repo-info">
+            {{ repo.name }}<br />
+            <span class="last-updated">Last updated: {{ repo.updated_at | date:'medium'}}</span>
+        </div>
+        <div class="repo-stats">
+            <div class="repo-forks">{{ repo.forks_count }}</div>
+            <div class="repo-watchers">{{ repo.watchers_count }}</div>
+        </div>
+    </li>
+</ul>

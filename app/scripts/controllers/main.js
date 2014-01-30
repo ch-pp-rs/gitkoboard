@@ -20,11 +20,11 @@ angular.module('gitkoboardApp')
       }
     );
 
-    $scope.users = ['chapperz', 'p-m-p'];
+    $scope.users = ['isaacs', 'chapperz', 'p-m-p'];
 
     $scope.addUser = function() {
         $scope.users.push($scope.user);
-    };
+      };
   })
   .directive('gbReadme', function () {
     return {
@@ -39,7 +39,7 @@ angular.module('gitkoboardApp')
     return {
         restrict: 'E',
         templateUrl: '/scripts/controllers/templates/repo-overview.html',
-        link: function(scope, element, attrs) {
+        link: function(scope) {
             var userUrl,
                 gitUrl = 'https://api.github.com/';
 
@@ -47,8 +47,8 @@ angular.module('gitkoboardApp')
 
             scope.repos = testService.getJSON(userUrl).then(function (data) {
                 scope.repos = data;
-            });
-        }
+              });
+          }
       };
   })
   .service('testService', function ($rootScope, $http, $q) {
@@ -61,13 +61,13 @@ angular.module('gitkoboardApp')
             success(function (data) {
                 // Resolve the promise with the data
                 deferred.resolve(data);
-            }).
-            error(function (data, status, headers, config) {
+              }).
+            error(function (data, status) {
                 // Something bad happened
-                deferred.reject(status + " | bad");
-            });
+                deferred.reject(status + ' | bad');
+              });
 
         // Return a promise that they will eventually get something back
         return deferred.promise;
-    };
-});
+      };
+  });

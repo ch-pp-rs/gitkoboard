@@ -1,23 +1,60 @@
-$iconSpritePath: "../images/glyphicons-halflings.png";
-$iconWhiteSpritePath: "../images/glyphicons-halflings-white.png";
+$font-color: #000;
+$main-background: #fff;
 
-@import "bootstrap-sass/lib/bootstrap";
-
-/* Put your CSS here */
 html, body {
   margin: 20px;
 }
 
 body {
-    background: #fafafa;
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-    color: #333;
+  color: $font-color;
+  background: $main-background;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
-ul.repos li {
-  width: 50%;
-  float: left;
-  padding: 0;
+ul.repos {
   margin: 0;
-  list-style: none;
+  padding: 0;
+  li {
+    width: 500px;
+    height: auto;
+    float: left;
+    border-radius: 2px;
+    border: 1px solid #ddd;
+    list-style: none;
+    margin: 10px;
+    h3 {
+      margin: 0;
+      border-bottom: 1px solid #eee;
+      line-height: 100%;
+      padding: 10px;
+    }
+    ul {
+      margin: 0;
+      padding: 0;
+    }
+    li {
+      width: 450px;
+      height: 32px;
+      padding: 0;
+      float: none;
+      border: none;
+      div.repo-info {
+        width: 80%;
+        float: left;
+        display: block;
+        span.last-updated {
+          font-size: 12px;
+        }
+      }
+      div.repo-stats {
+        float: left;
+        width: 20%;
+        display: block;
+        div.repo-forks, div.repo-watchers {
+          width: 50%;
+          float: left;
+        }
+      }
+    }
+  }
 }
