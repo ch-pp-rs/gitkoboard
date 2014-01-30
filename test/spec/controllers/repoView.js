@@ -23,15 +23,13 @@ describe('Controller: RepoViewCtrl', function () {
 
         gitUrl = gitUrl + 'repos/' + routeParams.user + '/' + routeParams.id;
 
-        httpMock.expectGET(gitUrl + '/languages').respond('2');
-        httpMock.expectGET(gitUrl + '/readme').respond('3');
+        httpMock.expectGET(gitUrl).respond('2');
 
         RepoViewCtrl = controllerService('RepoViewCtrl', {
             $scope: scope
         });
 
         httpMock.flush();
-        expect(scope.jqueryRepo).toBe('2');
-        expect(scope.readme).toBe('3');
+        expect(scope.repo).toBe('2');
     });
 });

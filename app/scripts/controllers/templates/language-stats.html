@@ -4,9 +4,9 @@
         {{ language.language }} - {{ (language.lines/totalLinesCode)*100 | number:0 }}%
     </li>
 </ul>
-<div class="lanuage-wrapper">
+<div class="language-wrapper">
     <div ng-repeat="language in languages"
          class="language-gauge"
-         style="width:{{ (language.lines/totalLinesCode)*100 | number:2 }}%;">&nbsp;
+         style="width:{{ (language.lines/totalLinesCode)*100 | number:0 }}%;">&nbsp;
     </div>
 </div>

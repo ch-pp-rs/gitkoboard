@@ -2,29 +2,23 @@
 
 angular.module('gitkoboardApp')
     .controller('MainCtrl', function ($scope) {
-        $scope.users = ['p-m-p', 'lukaszkorecki', 'ono', 'leocassarani', 'isaacs', 'kripken', 'chapperz'];
+        $scope.users = ['p-m-p', 'lukaszkorecki', 'ono', 'leocassarani', 'chapperz'];
 
         $scope.addUser = function () {
             $scope.users.push($scope.user);
         };
     })
     .controller('RepoViewCtrl', function ($scope, $http, $routeParams) {
-        var repoUrl, readmeUrl,
+        var repoUrl,
             gitUrl = 'https://api.github.com/';
 
         $scope.guser = $routeParams.user;
         $scope.repoId = $routeParams.id;
 
         repoUrl = gitUrl + 'repos/' + $routeParams.user + '/' + $routeParams.id;
-        readmeUrl = gitUrl + 'repos/' + $routeParams.user + '/' + $routeParams.id + '/readme';
 
         $http({method: 'GET', url: repoUrl}).success(function (data) {
                 $scope.repo = data;
-            }
-        );
-
-        $http({method: 'GET', url: readmeUrl}).success(function (data) {
-                $scope.readme = data;
             }
         );
     })
