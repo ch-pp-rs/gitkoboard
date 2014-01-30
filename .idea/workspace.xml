@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bc28cc89-5c48-4780-af0b-3d5e8e502521" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/spec/controllers/repoView.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/spec/controllers/main.js" afterPath="$PROJECT_DIR$/test/spec/controllers/main.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/spec/controllers/repoView.js" afterPath="$PROJECT_DIR$/test/spec/controllers/repoView.js" />
     </list>
     <ignored path="gitkoboard.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -61,19 +62,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="main.js" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="main.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/test/spec/controllers/main.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="28" column="24" selection-start="917" selection-end="917" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="731">
+            <state line="20" column="0" selection-start="499" selection-end="499" vertical-scroll-proportion="0.39534885" vertical-offset="0" max-vertical-offset="860">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="repoView.js" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="repoView.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/test/spec/controllers/repoView.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="35" column="33" selection-start="1134" selection-end="1134" vertical-scroll-proportion="0.69186044" vertical-offset="0" max-vertical-offset="860">
+            <state line="34" column="39" selection-start="1100" selection-end="1100" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="731">
               <folding />
             </state>
           </provider>
@@ -82,7 +83,7 @@
       <file leaf-file-name="main.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/scripts/controllers/main.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="4" column="90" selection-start="184" selection-end="184" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1343">
+            <state line="22" column="49" selection-start="819" selection-end="819" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1343">
               <folding />
             </state>
           </provider>
@@ -144,8 +145,8 @@
         <option value="$PROJECT_DIR$/app/views/main.html" />
         <option value="$PROJECT_DIR$/app/scripts/controllers/templates/repo-overview.html" />
         <option value="$PROJECT_DIR$/app/scripts/controllers/main.js" />
-        <option value="$PROJECT_DIR$/test/spec/controllers/main.js" />
         <option value="$PROJECT_DIR$/test/spec/controllers/repoView.js" />
+        <option value="$PROJECT_DIR$/test/spec/controllers/main.js" />
       </list>
     </option>
   </component>
@@ -599,13 +600,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/scripts/controllers/main.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="90" selection-start="184" selection-end="184" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1343">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/scripts/app.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="9" column="28" selection-start="220" selection-end="235" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="391">
@@ -613,16 +607,23 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test/spec/controllers/main.js">
+    <entry file="file://$PROJECT_DIR$/test/spec/controllers/repoView.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="28" column="24" selection-start="917" selection-end="917" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="731">
+        <state line="34" column="39" selection-start="1100" selection-end="1100" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="731">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test/spec/controllers/repoView.js">
+    <entry file="file://$PROJECT_DIR$/app/scripts/controllers/main.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="35" column="33" selection-start="1134" selection-end="1134" vertical-scroll-proportion="0.69186044" vertical-offset="0" max-vertical-offset="860">
+        <state line="22" column="49" selection-start="819" selection-end="819" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1343">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/spec/controllers/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="20" column="0" selection-start="499" selection-end="499" vertical-scroll-proportion="0.39534885" vertical-offset="0" max-vertical-offset="860">
           <folding />
         </state>
       </provider>

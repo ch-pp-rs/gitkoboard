@@ -33,6 +33,5 @@ describe('Controller: RepoViewCtrl', function () {
         httpMock.flush();
         expect(scope.jqueryRepo).toBe('2');
         expect(scope.readme).toBe('3');
-        expect(false).toBe(true);
     });
 });
