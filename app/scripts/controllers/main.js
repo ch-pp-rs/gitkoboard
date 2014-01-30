@@ -20,7 +20,7 @@ angular.module('gitkoboardApp')
       }
     );
 
-    $scope.users = ['isaacs', 'chapperz', 'p-m-p'];
+    $scope.users = ['p-m-p', 'lukaszkorecki', 'ono', 'leocassarani', 'isaacs', 'chapperz'];
 
     $scope.addUser = function() {
         $scope.users.push($scope.user);
