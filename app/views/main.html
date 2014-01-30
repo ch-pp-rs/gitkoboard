@@ -1,12 +1,12 @@
-<div>
-    <form ng-submit="addUser()">
-        <input type="text" ng-model="user" size="30"
-               placeholder="add new user">
-        <input class="btn-primary" type="submit" value="add">
-    </form>
+<div class="repo-wrapper">
     <ul class="repos">
         <li ng-repeat="user in users">
             <gb-repo-overview user="{{ user }}"></gb-repo-overview>
         </li>
     </ul>
 </div>
+<form ng-submit="addUser()" class="add-user">
+    <input type="text" ng-model="user" size="30"
+           placeholder="add new user">
+    <input class="btn-primary" type="submit" value="add">
+</form>

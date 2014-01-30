@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bc28cc89-5c48-4780-af0b-3d5e8e502521" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/index.html" afterPath="$PROJECT_DIR$/app/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/main.html" afterPath="$PROJECT_DIR$/app/views/main.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/styles/main.scss" afterPath="$PROJECT_DIR$/app/styles/main.scss" />
     </list>
@@ -29,7 +30,7 @@
       <file leaf-file-name="main.scss" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/styles/main.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="45" column="17" selection-start="787" selection-end="787" vertical-scroll-proportion="0.9172662" vertical-offset="0" max-vertical-offset="1173">
+            <state line="15" column="0" selection-start="227" selection-end="227" vertical-scroll-proportion="0.3057554" vertical-offset="0" max-vertical-offset="1411">
               <folding />
             </state>
           </provider>
@@ -44,19 +45,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Gruntfile.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Gruntfile.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="359" column="5" selection-start="8620" selection-end="8620" vertical-scroll-proportion="-8.185185" vertical-offset="5882" max-vertical-offset="6715">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="main.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/main.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="1" column="0" selection-start="6" selection-end="6" vertical-scroll-proportion="-0.65384614" vertical-offset="0" max-vertical-offset="306">
+            <state line="0" column="26" selection-start="26" selection-end="26" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="306">
               <folding />
             </state>
           </provider>
@@ -86,6 +78,15 @@
         <entry file="file://$PROJECT_DIR$/app/scripts/controllers/main.js">
           <provider selected="true" editor-type-id="text-editor">
             <state line="31" column="20" selection-start="1038" selection-end="1038" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1343">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="12" column="0" selection-start="579" selection-end="579" vertical-scroll-proportion="-7.8461537" vertical-offset="0" max-vertical-offset="969">
               <folding />
             </state>
           </provider>
@@ -139,7 +140,6 @@
         <option value="$PROJECT_DIR$/app/scripts/directives/templates/readme.html" />
         <option value="$PROJECT_DIR$/app/scripts/directives/main.js" />
         <option value="$PROJECT_DIR$/bower.json" />
-        <option value="$PROJECT_DIR$/app/index.html" />
         <option value="$PROJECT_DIR$/app/views/detailed-view.html" />
         <option value="$PROJECT_DIR$/app/scripts/app.js" />
         <option value="$PROJECT_DIR$/app/views/repo-details.html" />
@@ -149,6 +149,7 @@
         <option value="$PROJECT_DIR$/app/scripts/controllers/main.js" />
         <option value="$PROJECT_DIR$/Gruntfile.js" />
         <option value="$PROJECT_DIR$/app/views/main.html" />
+        <option value="$PROJECT_DIR$/app/index.html" />
         <option value="$PROJECT_DIR$/app/styles/main.scss" />
       </list>
     </option>
@@ -551,13 +552,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="43" column="0" selection-start="1881" selection-end="1881" vertical-scroll-proportion="0.73081607" vertical-offset="131" max-vertical-offset="952">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/bower.json">
       <provider selected="true" editor-type-id="text-editor">
         <state line="6" column="23" selection-start="139" selection-end="139" vertical-scroll-proportion="-3.9230769" vertical-offset="0" max-vertical-offset="340">
@@ -623,14 +617,21 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/main.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="0" selection-start="6" selection-end="6" vertical-scroll-proportion="-0.65384614" vertical-offset="0" max-vertical-offset="306">
+        <state line="0" column="26" selection-start="26" selection-end="26" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="306">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="0" selection-start="579" selection-end="579" vertical-scroll-proportion="-7.8461537" vertical-offset="0" max-vertical-offset="969">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/styles/main.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="45" column="17" selection-start="787" selection-end="787" vertical-scroll-proportion="0.9172662" vertical-offset="0" max-vertical-offset="1173">
+        <state line="15" column="0" selection-start="227" selection-end="227" vertical-scroll-proportion="0.3057554" vertical-offset="0" max-vertical-offset="1411">
           <folding />
         </state>
       </provider>
