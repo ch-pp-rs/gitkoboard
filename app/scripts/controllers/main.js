@@ -12,11 +12,14 @@ angular.module('gitkoboardApp')
         var repoUrl, readmeUrl,
             gitUrl = 'https://api.github.com/';
 
-        repoUrl = gitUrl + 'repos/' + $routeParams.user + '/' + $routeParams.id + '/languages';
+        $scope.guser = $routeParams.user;
+        $scope.repoId = $routeParams.id;
+
+        repoUrl = gitUrl + 'repos/' + $routeParams.user + '/' + $routeParams.id;
         readmeUrl = gitUrl + 'repos/' + $routeParams.user + '/' + $routeParams.id + '/readme';
 
         $http({method: 'GET', url: repoUrl}).success(function (data) {
-                $scope.jqueryRepo = data;
+                $scope.repo = data;
             }
         );
 
@@ -29,9 +32,6 @@ angular.module('gitkoboardApp')
     .directive('gbReadme', function () {
         return {
             restrict: 'E',
-            scope: {
-                customerInfo: '=info'
-            },
             templateUrl: '/scripts/controllers/templates/readme.html'
         };
     })
@@ -47,6 +47,29 @@ angular.module('gitkoboardApp')
 
                 scope.repos = testService.getJSON(userUrl).then(function (data) {
                     scope.repos = data;
+                });
+            }
+        };
+    })
+    .directive('gbLanguageStats', function (testService) {
+        return {
+            restrict: 'E',
+            templateUrl: '/scripts/controllers/templates/language-stats.html',
+            link: function (scope) {
+                var gitUrl = 'https://api.github.com/',
+                    url = gitUrl + 'repos/' + scope.guser + '/' + scope.repoId + '/languages',
+                    languagesObj = {};
+
+                languagesObj = testService.getJSON(url).then(function (data) {
+                    languagesObj = data;
+
+                    scope.languages = new Array();
+                    angular.forEach(languagesObj, function(lines, language){
+                        this.push({'language': language, 'lines': lines});
+                    }, scope.languages);
+
+                    console.log(scope.languages);
+                    console.log(languagesObj);
                 });
             }
         };
