@@ -2,7 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bc28cc89-5c48-4780-af0b-3d5e8e502521" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/styles/main.scss" afterPath="$PROJECT_DIR$/app/styles/main.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/repo-details.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/scripts/app.js" afterPath="$PROJECT_DIR$/app/scripts/app.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/main.html" afterPath="$PROJECT_DIR$/app/views/main.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/scripts/controllers/main.js" afterPath="$PROJECT_DIR$/app/scripts/controllers/main.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/spec/controllers/main.js" afterPath="$PROJECT_DIR$/test/spec/controllers/main.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/scripts/controllers/templates/repo-overview.html" afterPath="$PROJECT_DIR$/app/scripts/controllers/templates/repo-overview.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="gitkoboard.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -25,10 +31,19 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="main.scss" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/styles/main.scss">
+      <file leaf-file-name="app.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/scripts/app.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="35" column="15" selection-start="582" selection-end="582" vertical-scroll-proportion="0.7134293" vertical-offset="0" max-vertical-offset="1122">
+            <state line="9" column="28" selection-start="220" selection-end="235" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="391">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="repo-details.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/repo-details.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="6" column="6" selection-start="156" selection-end="156" vertical-scroll-proportion="-3.9230769" vertical-offset="0" max-vertical-offset="204">
               <folding />
             </state>
           </provider>
@@ -55,16 +70,16 @@
       <file leaf-file-name="main.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/main.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="15" column="9" selection-start="448" selection-end="448" vertical-scroll-proportion="-9.807693" vertical-offset="0" max-vertical-offset="493">
+            <state line="15" column="0" selection-start="443" selection-end="443" vertical-scroll-proportion="-9.807693" vertical-offset="0" max-vertical-offset="357">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="main.js" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="main.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/test/spec/controllers/main.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="7" column="0" selection-start="184" selection-end="184" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="680">
+            <state line="29" column="25" selection-start="977" selection-end="977" vertical-scroll-proportion="0.57325584" vertical-offset="0" max-vertical-offset="860">
               <folding />
             </state>
           </provider>
@@ -73,7 +88,7 @@
       <file leaf-file-name="main.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/scripts/controllers/main.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="15" column="6" selection-start="485" selection-end="485" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1343">
+            <state line="4" column="90" selection-start="184" selection-end="184" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1343">
               <folding />
             </state>
           </provider>
@@ -88,20 +103,16 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/index.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="43" column="0" selection-start="1881" selection-end="1881" vertical-scroll-proportion="-23.076923" vertical-offset="131" max-vertical-offset="952">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="repo-overview.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/scripts/controllers/templates/repo-overview.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="8" column="63" selection-start="375" selection-end="375" vertical-scroll-proportion="-5.230769" vertical-offset="0" max-vertical-offset="306">
-              <folding />
+            <state line="12" column="5" selection-start="526" selection-end="526" vertical-scroll-proportion="-7.8461537" vertical-offset="0" max-vertical-offset="306">
+              <folding>
+                <marker date="1391084706000" expanded="true" signature="23:525" placeholder="..." />
+                <marker date="1391084706000" expanded="true" signature="99:519" placeholder="..." />
+                <marker date="1391084706000" expanded="true" signature="131:325" placeholder="..." />
+                <marker date="1391084706000" expanded="true" signature="358:509" placeholder="..." />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -129,15 +140,17 @@
     <option name="changedFiles">
       <list>
         <option value="$PROJECT_DIR$/app/scripts/directives/templates/readme.html" />
-        <option value="$PROJECT_DIR$/app/views/main.html" />
         <option value="$PROJECT_DIR$/app/scripts/directives/main.js" />
-        <option value="$PROJECT_DIR$/app/scripts/app.js" />
-        <option value="$PROJECT_DIR$/test/spec/controllers/main.js" />
         <option value="$PROJECT_DIR$/bower.json" />
         <option value="$PROJECT_DIR$/app/index.html" />
+        <option value="$PROJECT_DIR$/app/styles/main.scss" />
+        <option value="$PROJECT_DIR$/app/views/detailed-view.html" />
+        <option value="$PROJECT_DIR$/app/scripts/app.js" />
+        <option value="$PROJECT_DIR$/app/views/repo-details.html" />
+        <option value="$PROJECT_DIR$/app/views/main.html" />
         <option value="$PROJECT_DIR$/app/scripts/controllers/templates/repo-overview.html" />
         <option value="$PROJECT_DIR$/app/scripts/controllers/main.js" />
-        <option value="$PROJECT_DIR$/app/styles/main.scss" />
+        <option value="$PROJECT_DIR$/test/spec/controllers/main.js" />
       </list>
     </option>
   </component>
@@ -239,6 +252,24 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="gitkoboard" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="gitkoboard" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -509,16 +540,30 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/scripts/app.js">
+    <entry file="file://$PROJECT_DIR$/package.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="0" selection-start="266" selection-end="266" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="323">
+        <state line="10" column="35" selection-start="239" selection-end="239" vertical-scroll-proportion="-6.5384617" vertical-offset="0" max-vertical-offset="1020">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/package.json">
+    <entry file="file://$PROJECT_DIR$/app/scripts/controllers/templates/readme.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="35" selection-start="239" selection-end="239" vertical-scroll-proportion="-6.5384617" vertical-offset="0" max-vertical-offset="1020">
+        <state line="0" column="31" selection-start="31" selection-end="31" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="102">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/styles/main.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="15" column="13" selection-start="240" selection-end="240" vertical-scroll-proportion="-9.807693" vertical-offset="0" max-vertical-offset="1122">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="43" column="0" selection-start="1881" selection-end="1881" vertical-scroll-proportion="0.73081607" vertical-offset="131" max-vertical-offset="952">
           <folding />
         </state>
       </provider>
@@ -532,49 +577,47 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/main.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="9" selection-start="448" selection-end="448" vertical-scroll-proportion="-9.807693" vertical-offset="0" max-vertical-offset="493">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/spec/controllers/main.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="0" selection-start="184" selection-end="184" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="680">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="43" column="0" selection-start="1881" selection-end="1881" vertical-scroll-proportion="-23.076923" vertical-offset="131" max-vertical-offset="952">
+        <state line="15" column="0" selection-start="443" selection-end="443" vertical-scroll-proportion="-9.807693" vertical-offset="0" max-vertical-offset="357">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/scripts/controllers/templates/repo-overview.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="63" selection-start="375" selection-end="375" vertical-scroll-proportion="-5.230769" vertical-offset="0" max-vertical-offset="306">
-          <folding />
+        <state line="12" column="5" selection-start="526" selection-end="526" vertical-scroll-proportion="-7.8461537" vertical-offset="0" max-vertical-offset="306">
+          <folding>
+            <marker date="1391084706000" expanded="true" signature="23:525" placeholder="..." />
+            <marker date="1391084706000" expanded="true" signature="99:519" placeholder="..." />
+            <marker date="1391084706000" expanded="true" signature="131:325" placeholder="..." />
+            <marker date="1391084706000" expanded="true" signature="358:509" placeholder="..." />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/scripts/controllers/templates/readme.html">
+    <entry file="file://$PROJECT_DIR$/app/views/repo-details.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="31" selection-start="31" selection-end="31" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="102">
+        <state line="6" column="6" selection-start="156" selection-end="156" vertical-scroll-proportion="-3.9230769" vertical-offset="0" max-vertical-offset="204">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/scripts/controllers/main.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="6" selection-start="485" selection-end="485" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1343">
+        <state line="4" column="90" selection-start="184" selection-end="184" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1343">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/styles/main.scss">
+    <entry file="file://$PROJECT_DIR$/app/scripts/app.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="35" column="15" selection-start="582" selection-end="582" vertical-scroll-proportion="0.7134293" vertical-offset="0" max-vertical-offset="1122">
+        <state line="9" column="28" selection-start="220" selection-end="235" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="391">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/spec/controllers/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="29" column="25" selection-start="977" selection-end="977" vertical-scroll-proportion="0.57325584" vertical-offset="0" max-vertical-offset="860">
           <folding />
         </state>
       </provider>

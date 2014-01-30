@@ -2,7 +2,7 @@
 <ul>
     <li ng-repeat="repo in repos | orderBy:'-watchers_count' | limitTo: 5">
         <div class="repo-info">
-            {{ repo.name }}<br />
+            <a href="#/repo/{{ user }}/{{ repo.name }}">{{ repo.name }}</a><br />
             <span class="last-updated">Last updated: {{ repo.updated_at | date:'medium'}}</span>
         </div>
         <div class="repo-stats">

@@ -1,31 +1,31 @@
 'use strict';
 
 angular.module('gitkoboardApp')
-    .controller('MainCtrl',function ($scope, $http) {
-    var repoUrl, readmeUrl,
-        gitUrl = 'https://api.github.com/',
-        user = 'p-m-p',
-        repo = 'jquery-box-slider';
-
-    repoUrl = gitUrl + 'repos/' + user + '/' + repo + '/languages';
-    readmeUrl = gitUrl + 'repos/' + user + '/' + repo + '/readme';
-
-    $http({method: 'GET', url: repoUrl}).success(function (data) {
-        $scope.jqueryRepo = data;
-      }
-    );
-
-    $http({method: 'GET', url: readmeUrl}).success(function (data) {
-        $scope.readme = data;
-      }
-    );
-
-    $scope.users = ['p-m-p', 'lukaszkorecki', 'ono', 'leocassarani', 'isaacs', 'chapperz'];
+    .controller('MainCtrl',function ($scope) {
+    $scope.users = ['p-m-p', 'lukaszkorecki', 'ono', 'leocassarani', 'isaacs', 'kripken', 'chapperz'];
 
     $scope.addUser = function() {
         $scope.users.push($scope.user);
       };
   })
+    .controller('RepoViewCtrl',function ($scope, $http, $routeParams) {
+        var repoUrl, readmeUrl,
+            gitUrl = 'https://api.github.com/';
+
+        repoUrl = gitUrl + 'repos/' + $routeParams.user + '/' + $routeParams.id + '/languages';
+        readmeUrl = gitUrl + 'repos/' + $routeParams.user + '/' + $routeParams.id + '/readme';
+
+        $http({method: 'GET', url: repoUrl}).success(function (data) {
+                $scope.jqueryRepo = data;
+            }
+        );
+
+        $http({method: 'GET', url: readmeUrl}).success(function (data) {
+                $scope.readme = data;
+            }
+        );
+    })
+
   .directive('gbReadme', function () {
     return {
         restrict: 'E',

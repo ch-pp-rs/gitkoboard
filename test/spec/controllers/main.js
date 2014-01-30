@@ -1,29 +1,32 @@
 'use strict';
 
-describe('Controller: MainCtrl', function () {
-    var scope, controllerService, httpMock;
+describe('Controller: RepoViewCtrl', function () {
+    var scope, controllerService, httpMock, routeParams;
 
     // load the controller's module
     beforeEach(module('gitkoboardApp'));
 
-    var MainCtrl,
+    var RepoViewCtrl,
         scope;
 
-    beforeEach(inject(function ($rootScope, $controller, $httpBackend) {
+    beforeEach(inject(function ($rootScope, $controller, $httpBackend, $routeParams) {
         scope = $rootScope.$new();
         controllerService = $controller;
         httpMock = $httpBackend;
+        routeParams = $routeParams
     }));
 
-    it('should get users repos and add them to the scope', function () {
-        var gitUrl = 'https://api.github.com/',
-            user = 'p-m-p',
-            repo = 'jquery-box-slider';
+    it('should get requested repo and add them to the scope', function () {
+        var gitUrl = 'https://api.github.com/';
+        routeParams.user = 'p-m-p';
+        routeParams.id = 'jquery-box-slider';
 
-        httpMock.expectGET(gitUrl + 'repos/' + user + '/' + repo + '/languages').respond('2');
-        httpMock.expectGET(gitUrl + 'repos/' + user + '/' + repo + '/readme').respond('3');
+        gitUrl = gitUrl + 'repos/' + routeParams.user + '/' + routeParams.id;
 
-        MainCtrl = controllerService('MainCtrl', {
+        httpMock.expectGET(gitUrl + '/languages').respond('2');
+        httpMock.expectGET(gitUrl + '/readme').respond('3');
+
+        RepoViewCtrl = controllerService('RepoViewCtrl', {
             $scope: scope
         });
 

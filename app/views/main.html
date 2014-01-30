@@ -7,17 +7,9 @@
                placeholder="add new user">
         <input class="btn-primary" type="submit" value="add">
     </form>
-</div>
-<div>
     <ul class="repos">
         <li ng-repeat="user in users">
             <gb-repo-overview user="{{ user }}"></gb-repo-overview>
         </li>
     </ul>
-
-    <ul>
-        <li ng-repeat="details in jqueryRepo">{{ details }}</li>
-    </ul>
-    <p>{{ readme.content }}</p>
-    <gb-readme></gb-readme>
 </div>
