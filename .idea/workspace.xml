@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="bc28cc89-5c48-4780-af0b-3d5e8e502521" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/scripts/controllers/templates/repo-overview.html" afterPath="$PROJECT_DIR$/app/scripts/controllers/templates/repo-overview.html" />
-    </list>
+    <list default="true" id="bc28cc89-5c48-4780-af0b-3d5e8e502521" name="Default" comment="" />
     <ignored path="gitkoboard.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -102,7 +100,7 @@
       <file leaf-file-name="repo-overview.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/scripts/controllers/templates/repo-overview.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="2" column="74" selection-start="160" selection-end="160" vertical-scroll-proportion="0.040767387" vertical-offset="0" max-vertical-offset="834">
+            <state line="12" column="5" selection-start="588" selection-end="588" vertical-scroll-proportion="0.24460432" vertical-offset="0" max-vertical-offset="834">
               <folding />
             </state>
           </provider>
@@ -637,7 +635,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/scripts/controllers/templates/repo-overview.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="74" selection-start="160" selection-end="160" vertical-scroll-proportion="0.040767387" vertical-offset="0" max-vertical-offset="834">
+        <state line="12" column="5" selection-start="588" selection-end="588" vertical-scroll-proportion="0.24460432" vertical-offset="0" max-vertical-offset="834">
           <folding />
         </state>
       </provider>
