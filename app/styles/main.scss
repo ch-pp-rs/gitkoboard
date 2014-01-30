@@ -6,6 +6,7 @@ $font-color: #000;
 $sub-font-color: #999;
 $header-background-color: #f7f7f7;
 $main-background-color: #fff;
+$language-bg-colors: #547980, #9DE0AD, #45ADA8, #E5FCC2, #774F38, #E08E79, #F1D4AF, #C5E0DC, #594F4F;
 
 html, body {
   margin: 20px;
@@ -93,6 +94,32 @@ ul.repos {
           background-image: url(#{$img-path}git-fork.gif);
         }
       }
+    }
+  }
+}
+
+div.repo-overview {
+  margin-left: 10px;
+  ul.language-desc {
+    li {
+      float: left;
+      list-style: none;
+    }
+  }
+  .language-wrapper {
+    width: 100%;
+    height: 10px;
+  }
+  .language-gauge {
+    height: 10px;
+    background-color: #ffff00;
+    display: block;
+    float: left;
+  }
+
+  @for $i from 1 to length($language-bg-colors) {
+    .language-gauge:nth-child(#{$i}) {
+      background-color: nth($language-bg-colors, $i);
     }
   }
 }

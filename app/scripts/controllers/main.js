@@ -64,12 +64,12 @@ angular.module('gitkoboardApp')
                     languagesObj = data;
 
                     scope.languages = new Array();
+                    scope.totalLinesCode = 0;
+
                     angular.forEach(languagesObj, function(lines, language){
+                        scope.totalLinesCode = scope.totalLinesCode + lines;
                         this.push({'language': language, 'lines': lines});
                     }, scope.languages);
-
-                    console.log(scope.languages);
-                    console.log(languagesObj);
                 });
             }
         };

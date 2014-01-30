@@ -1,6 +1,6 @@
-<h2>{{ repoId }} by {{ guser }}</h2>
-<span>{{ repo.description }}</span>
-<div>
+<div class="repo-overview">
+    <h2>{{ repoId }} by {{ guser }}</h2>
+    <span>{{ repo.description }}</span>
     <gb-language-stats guser="guser" repo="repoId"></gb-language-stats>
     <p>{{ readme.content }}</p>
     <gb-readme></gb-readme>
