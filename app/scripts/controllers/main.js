@@ -28,13 +28,6 @@ angular.module('gitkoboardApp')
             }
         );
     })
-
-    .directive('gbReadme', function () {
-        return {
-            restrict: 'E',
-            templateUrl: '/scripts/controllers/templates/readme.html'
-        };
-    })
     .directive('gbRepoOverview', function (testService) {
         return {
             restrict: 'E',
