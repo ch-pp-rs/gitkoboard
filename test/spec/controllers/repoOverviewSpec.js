@@ -1,7 +1,7 @@
 'use strict';
 
-describe('Controller: MainCtrl', function () {
-    var mainCtrl, scope, controllerService;
+describe('Controller: RepoOverviewCtrl', function () {
+    var repoOverviewCtrl, scope, controllerService;
 
     beforeEach(module('gitkoboardApp'));
 
@@ -11,7 +11,7 @@ describe('Controller: MainCtrl', function () {
     }));
 
     it('should add a user to the user array', function () {
-        mainCtrl = controllerService('MainCtrl', {
+        repoOverviewCtrl = controllerService('RepoOverviewCtrl', {
             $scope: scope
         });
         var user = 'test1'
