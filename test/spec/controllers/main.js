@@ -1,20 +1,25 @@
 'use strict';
 
 describe('Controller: MainCtrl', function () {
-    var scope, controllerService, httpMock;
+    var mainCtrl, scope, controllerService;
 
-    // load the controller's module
     beforeEach(module('gitkoboardApp'));
 
-    var MainCtrl,
-        scope;
-
-    beforeEach(inject(function ($rootScope, $controller, $httpBackend) {
+    beforeEach(inject(function ($rootScope, $controller) {
         scope = $rootScope.$new();
         controllerService = $controller;
-        httpMock = $httpBackend;
     }));
 
-    it('should get requested repo and add them to the scope', function () {
+    it('should add a user to the user array', function () {
+        mainCtrl = controllerService('MainCtrl', {
+            $scope: scope
+        });
+        var user = 'test1'
+
+        expect(scope.users.length).toBe(5);
+
+        scope.addUser(user);
+
+        expect(scope.users.length).toBe(6);
     });
 });
