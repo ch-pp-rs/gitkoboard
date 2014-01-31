@@ -5,7 +5,7 @@ angular.module('gitkoboardApp', [])
     $routeProvider
       .when('/', {
         templateUrl: 'views/main.html',
-        controller: 'MainCtrl'
+        controller: 'RepoOverviewCtrl'
       })
       .when('/repo/:user/:id', {
         templateUrl: 'views/repo-details.html',

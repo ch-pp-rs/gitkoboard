@@ -1,13 +1,6 @@
 'use strict';
 
 angular.module('gitkoboardApp')
-    .controller('MainCtrl', function ($scope) {
-        $scope.users = ['p-m-p', 'lukaszkorecki', 'ono', 'leocassarani', 'chapperz'];
-
-        $scope.addUser = function (user) {
-            $scope.users.push(user);
-        };
-    })
     .controller('RepoViewCtrl', function ($scope, $http, $routeParams) {
         var repoUrl,
             gitUrl = 'https://api.github.com/';
