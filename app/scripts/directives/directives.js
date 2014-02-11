@@ -1,19 +1,37 @@
 'use strict';
 
+function callGit (requestUrl, deferredRequestService) {
+    return deferredRequestService.getJSON(requestUrl).then(function (data) {
+        return data;
+    });
+}
+
+function callGitUser (user, deferredRequestService) {
+    var userUrl,
+        gitUrl = 'https://api.github.com/';
+
+    userUrl = gitUrl + 'users/' + user;
+
+    return callGit(userUrl, deferredRequestService);
+}
+
+function callGitRepo (user, deferredRequestService) {
+    var repoUrl,
+        gitUrl = 'https://api.github.com/';
+
+    repoUrl = gitUrl + 'users/' + user + '/repos';
+
+    return callGit(repoUrl, deferredRequestService);
+}
+
 angular.module('gitkoboardApp')
     .directive('gbRepoOverview', function (deferredRequestService) {
         return {
             restrict: 'E',
             templateUrl: '/scripts/directives/templates/repo-overview.html',
             link: function (scope) {
-                var userUrl,
-                    gitUrl = 'https://api.github.com/';
-
-                userUrl = gitUrl + 'users/' + scope.user + '/repos';
-
-                scope.repos = deferredRequestService.getJSON(userUrl).then(function (data) {
-                    scope.repos = data;
-                });
+                scope.repos = callGitRepo(scope.user, deferredRequestService);
+                scope.gitUsers = callGitUser(scope.user, deferredRequestService);
             }
         };
     })
